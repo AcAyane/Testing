@@ -1,3 +1,21 @@
-import Component from "@glimmer/component";
+import Component from "@ember/component";
 
-export default class GenreComponent extends Component {}
+export default Component.extend({
+  init() {
+    this._super(...arguments);
+    this.errors = [];
+  },
+
+  didUpdateAttrs() {
+    this._super(...arguments);
+    this.set("errors", []);
+  },
+
+  actions: {
+    required(event) {
+      if (!event.target.value) {
+        this.errors.pushObject({ message: `${event.target.name} is required` });
+      }
+    },
+  },
+});

@@ -1,11 +1,13 @@
 <h1>this is the homepage</h1>
 
 {{!-- <Genre list={model} /> --}}
-{{genre list=model}}
+{{genre model=model}}
+
+{{!-- <h1>{{@model}}</h1> --}}
 
 {{!-- <ul>
-    {{#each @model as |item|}}
-    <li>{{item}}</li>
+    {{#each model as |item|}}
+    <li>{{item.title}}</li>
     {{/each}}
 </ul> --}}
 
