@@ -9,6 +9,7 @@ export default class HomePageRoute extends Route {
       headers: { Authorization: "Bearer Wookie2019" },
     });
     let data = await response.json();
+    console.log(data.movies);
     return data.movies;
   }
 }

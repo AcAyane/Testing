@@ -1,14 +1,9 @@
-<h1>this is the homepage</h1>
+<h1>this is the HomePage</h1>
 
-{{!-- <Genre list={model} /> --}}
-{{genre model=model}}
+{{#each this.genres as |item|}}
+{{genre model=model name=item}}
+{{/each}}
 
-{{!-- <h1>{{@model}}</h1> --}}
 
-{{!-- <ul>
-    {{#each model as |item|}}
-    <li>{{item.title}}</li>
-    {{/each}}
-</ul> --}}
 
 {{outlet}}
