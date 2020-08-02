@@ -102,3 +102,60 @@ a:focus {
     float: none;
   }
 }
+
+img {
+  height: 100%;
+}
+#grid {
+  writing-mode: vertical-lr;
+  display: grid;
+  grid-gap: 2vh;
+  grid-auto-rows: 1.52vh;
+  grid-template-columns: repeat(3, 17.6vh);
+  grid-auto-flow: row;
+  text-align: center;
+}
+
+#grid > div {
+  overflow: hidden;
+}
+.span1 {
+  background-color: #ff9800;
+  grid-row-end: span 3;
+}
+.span2 {
+  background-color: #ff9800;
+  grid-row-end: span 4;
+}
+.span3 {
+  background-color: #ff9800;
+  grid-row-end: span 5;
+}
+.span4 {
+  background-color: #ff9800;
+  grid-row-end: span 6;
+}
+.span5 {
+  background-color: #ff9800;
+  grid-row-end: span 7;
+}
+.span6 {
+  background-color: #ff9800;
+  grid-row-end: span 8;
+}
+.span7 {
+  background-color: #ff9800;
+  grid-row-end: span 9;
+}
+.span8 {
+  background-color: #ff9800;
+  grid-row-end: span 10;
+}
+.span9 {
+  background-color: #ff9800;
+  grid-row-end: span 11;
+}
+.span10 {
+  background-color: #ff9800;
+  grid-row-end: span 12;
+}
